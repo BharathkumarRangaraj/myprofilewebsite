@@ -8,8 +8,17 @@ import React from "react";
 const Navbar = () => {
   const [click, setclick] = React.useState(false);
   const handleClick = () => setclick(!click);
+  const [color, setcolor] = React.useState(false);
+  const changecolor = () => {
+    if (window.scrollY >= 100) {
+      setcolor(true);
+    } else {
+      setcolor(false);
+    }
+  };
+  window.addEventListener("scroll", changecolor);
   return (
-    <div className="Header">
+    <div className={color ? "Header Header-bg" : "Header"}>
       <Link to={"/"}>
         <h1>Portfolio</h1>
       </Link>
