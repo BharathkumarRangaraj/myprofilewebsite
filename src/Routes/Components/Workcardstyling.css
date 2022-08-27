@@ -32,8 +32,15 @@
   justify-content: space-between;
   padding: 0.5rem 0;
 }
-.pro-btns .btns {
+.pro-btns .btnss {
   padding: 0.5rem 1rem;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 @media screen and (max-width: 740px) {
   .project-container {
